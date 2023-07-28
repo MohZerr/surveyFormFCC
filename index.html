@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                <title>Survey Form</title>
+</head>
+<body>
+    <header class="header">
+      <img src="https://i.postimg.cc/gJg52b7k/pngegg.png" alt="logo-Digitize yourself">
+      <h1 id="title">Digitize yourself</h1>
+      <p id="description">Registration form</p>
+    </header>
+  <div id="container">
+  <form action="" method="post" id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label  for="last-name">Last name</label>
+      <input class="form-control" id="last-name" type="text" placeholder="Enter your last name" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label"  for="number">Age</label>
+      <input class="form-control" min="18" max="100" id="number" type="number" placeholder="Enter your age" required>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input class="form-control" id="email" type="email" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone number</label>
+      <input class="form-control" type="tel" id="phone" placeholder="Enter your phone number" name="phone" pattern="[0-9]{10}" required>
+    </div>
+    <p>Select your package :</p>
+    <div id="radio">
+    <label><input checked value="radio" type="radio" name="radio">Economic</label>
+    <label><input value="radio" type="radio" name="radio">standard</label>
+    <label><input value="radio" type="radio" name="radio">Digitize+</label>
+    </div>
+   <select class="form-control"  id="dropdown" required>
+      <option value="" selected disabled>Did you pass the legal  training before to subscribe our offer?</option>
+      <option value="1" >Yes</option>
+      <option value="2">No</option>
+   </select>
+    <div  id="checkbox">
+    <label  for="terms">
+      <input id="terms" type="checkbox"  value="3" required>I confirm that i have read and accepted the <a href="#">&nbsp;terms and conditions.</a></input>
+    </label>
+    <label for="no-leg">
+    <input id="no-leg"type="checkbox"  value="4">I confirm that i will take no legal action against the corporation in event of inconvenience.</input>
+    </label>
+    <label for="case-of-death">
+    <input id="case-of-death" type="checkbox"  value="5">By submitting this form, I accept that the information entered will be used in the commercial relations that may result from it.</input>
+    </label>
+    <label for="confidentiality">
+    <input id="confidentiality" type="checkbox"  value="6">I accept my brain data to be study for commercial use.</input>
+    </label>
+   <p>Any comments or suggestions?</p>
+    <textarea placeholder=" Enter your comment here..."></textarea>
+   </div>
+    <input value="Submit" type="submit" id="submit"></input>
+  
+  
+  </div>
+  </form>
+
+</body>
+</html>
